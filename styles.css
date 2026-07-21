@@ -391,3 +391,36 @@ body {
         gap: 1rem;
     }
 }
+
+/* Estilos para la sección Quiénes Somos */
+.quienes-somos-section {
+    padding: 3rem 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.quienes-somos-container {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.valor-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.valor-card h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
