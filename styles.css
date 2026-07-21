@@ -1,11 +1,139 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de comida colombiana </title>
-</head>
-<body>
-    
-</body>
-</html>
+:root{
+      --crema: #FBF3E7;
+  --mostaza: #E3A008;
+  --rojo-aji: #B33A3A;
+  --verde-cafe: #3B5D3C;
+  --cafe-oscuro: #3E2723;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: var(--crema);
+  color: var(--cafe-oscuro);
+}
+
+h1, h2, h3 {
+  font-family: 'Fraunces', serif;
+}
+
+
+.encabezado {
+  position: sticky; 
+  top: 0;
+  z-index: 100;
+  background-color: var(--cafe-oscuro);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+
+.logo {
+  color: var(--mostaza);
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+
+.main-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+
+.main-nav a {
+  color: var(--crema);
+  text-decoration: none;
+  font-weight: 600;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+
+.main-nav a:hover {
+  color: var(--mostaza);
+}
+
+
+.main-nav a.active {
+  border-bottom: 2px solid var(--rojo-aji);
+  color: var(--mostaza);
+}
+
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--crema);
+}
+
+
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: var(--cafe-oscuro);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 1rem 0;
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+}
+
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.pie-pagina {
+  background-color: var(--verde-cafe);
+  color: var(--crema);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
