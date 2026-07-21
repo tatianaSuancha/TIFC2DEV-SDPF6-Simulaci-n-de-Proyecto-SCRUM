@@ -125,9 +125,23 @@ main {
   padding: 3rem 1.5rem;
 }
 
+.hero {
+  background: linear-gradient(135deg, #fff7eb 0%, #f3dfb2 100%);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(62, 39, 35, 0.12);
+  margin-bottom: 2rem;
+}
+
 .hero h1 {
   font-size: 2.2rem;
   margin-bottom: 0.8rem;
+  color: var(--cafe-oscuro);
+}
+
+.hero p {
+  line-height: 1.6;
+  font-size: 1.05rem;
 }
 
 .pie-pagina {
@@ -136,15 +150,4 @@ main {
   text-align: center;
   padding: 1.5rem;
   font-size: 0.9rem;
-}
-.piedDePagina {
-  background-color: var(--verde-cafe);
-  color: var(--crema);
-  text-align: center;
-  padding: 1.5rem;
-  font-size: 0.9rem;
-  
-}
-.gmail{
-  color: var(--crema);
 }
