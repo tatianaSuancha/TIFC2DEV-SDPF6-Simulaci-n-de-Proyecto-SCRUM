@@ -137,3 +137,14 @@ main {
   padding: 1.5rem;
   font-size: 0.9rem;
 }
+.piedDePagina {
+  background-color: var(--verde-cafe);
+  color: var(--crema);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  
+}
+.gmail{
+  color: var(--crema);
+}
